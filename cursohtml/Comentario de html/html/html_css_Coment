@@ -1,0 +1,62 @@
+1) COMENTARIOS CIRUGICOS
+2) //h1,h2,h3,h4,h5 não e uma letra grande ou pequana e um titulo, Letra grande ou Letra pequena
+e uma questao de formatação. H1 sequinifica hierarquia de titulos h2 e um subTitulo de H1;
+3) h3 e um subTitulo de h2//;
+4)<br> = break row = quebra de linha;
+5)&nbsp; = non - breaking space = espaço sem quebra;
+6)<p> para paragrafos
+7)<wbr> = quebra de palavras se vc quiser quebrar o endereço de email ou site use o wbr
+8)&shy; = soft hyphen. exemplos (-) se quiser usar quebra uma palavra use o &shy;
+9)TAGS (<p>
+    &lt;
+    &gt;
+    &le;
+    &ge;<br/>
+    
+    &pound;
+    &yen;
+    &euro; <br/>
+
+    &copy;
+    &reg;
+    &trade; <br/>
+
+    A &sup1;
+    &permil;
+    &larr;
+    &Rarr;
+    &Uarr;
+    &Darr;
+    &harr;
+</p>)
+10)<br> = Coloca em Negrito;
+11)<i> = Coloca em Italico;
+11)<del> = que mostra que foi deletado o texto ou vai ser deeletado;
+12)css = span style="txt-decoration: underline;"= style="txt-decoration: overline"; = style="txt-decoration: line-through";
+13)css = <span style="txt-decoration: normal;"=style="txt-decoration: bold ou bolder;"
+14)css = <span style="font-weight:900;"
+15)css = style="text-align: center;" para centralizar = style="text-align: left;" padrao =style="text-align: center;"style="text-align: right;"
+16)css = style="text-align: justify;" para alinha certo o texto;
+17)para facilitar alinhamento do texto so cria dentro do head <style>
+                                                                    p{
+                                                                    text-align: justify;
+                                                                    text-indent: 50px;
+
+18)<p>Exemeplos de <sub>Formatação</sub></p>
+19)<p>X<sup>2</sup>e H<sub>2</sub>O</p>
+20)<pre> Tudo que estiver em <Pre> sera considerado pre-formatado;
+<code> Tudo que estiver em code sera formatado em code(Codigo);
+    #include &lt;iotream&gt;
+    int main() {
+        count << "olá,mundo!";
+        return 0;
+    }
+</code>    
+</pre>
+21)Cores Usando o Css
+22)Css = background-color: gains;
+23)Color = para mudar a letras do texto,(Dica use o color pick no google), color: rgba(0,0,0,0.5) = rgba e uma transparencia;
+24) background-image: url("Voce coloca aqui o fundo que deseja");
+25)Cores usando o hsl(background-color: hsl(165,81%,93%));
+26)Cores Usando o hsla(background-color: hsla(165,81%,93%,0.5);)
+===========================================================================================================
