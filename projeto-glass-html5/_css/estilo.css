@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap'); /*Usando uma font da intenert sem 
+    precisar baixar.*/
+
+@font-face { /*Pegando uma fonte que ja tem baixada no sistema.*/
+    font-family:'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body{
+    background-color: #dddddd;  
+    color:black;
+    font-family: Arial, sans-serif;
+}
+
+div#Inteface { /*Interface melhorando visualmente*/
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px black; /*deslocamento lateral 0px, Deslocamento vertical 0px, espalhamento da sombra 10px, cor da sombra*/
+    padding: 10px 10px 10px 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    color:  #606060;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*Melhorando o icone ouculos*/
+img#icone {
+    display: block;
+    position: absolute;
+    margin-left: 733px;
+    top: 70px;
+}
+img#glass {
+    position: absolute;
+    margin-top: -14px;
+    border-bottom: 1px #606060;
+    
+}
+/*Cabeçalho*/
+header,#Cabecalho {
+    border-bottom: 1px #606060  solid;
+    height: 150px; /*Altura*/
+   
+    
+}
+header#Cabecalho,header h1 {
+    font-family: 'FonteLogo', cursive;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#Cabecalho,header h2  {
+    font-family: 'Titillium Web',sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+/*formatação de imagem com legendas*//*Crie sempre um figure para facilitar*/
+figure.foto-legenda {
+    position: relative; /*Use o relative quando vc estiver usando figcaption ou a sua legenda não vai fica certa.*/
+    border: 1px  solid white; /*Para coloca uma borda*/
+    box-shadow: 1px 1px 4px black; /* Sombra com borda*/
+}
+figure.foto-legenda img{ /*Formatação da imagem */
+    width: 100%;
+    height: 100%;
+}
+
+/*Crie um Figure com figcaption para um efeito*/
+figure.foto-legenda figcaption {
+    position: absolute; /*Tudo que estiver no ficaption vai ter uma posição absoluta No meu caso vai ser a borda branca*/
+    opacity: 0;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /*Isso cria uma box dentro da borda */
+    transition: opacity 1s;
+}
+/*Criando um  efeito de sobreposição*//*Oque e um Hover ? hover e uma classe especifica quando voce passa o 
+    mouse em cima vai aparecer o feito*/
+figure.foto-legenda:hover figcaption {
+    opacity: 0.9;
+    
+}
+
+/*Formatação do Menu*/
+nav#menu {
+    display: block; /*um block pode faze flutuar pela tela*/
+    
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    margin-left: 265px;
+    
+    
+}
+nav#menu li {
+    display: inline-block; /*Que faz todo bloco seja exibido em uma linha reta*/
+    background-color: #dddddd;
+    padding: 8px; /*Cria um espaço dentro dele*/
+    margin: 4px; /*Cria um espaço fora dele*/
+    transition: 1s; /* Transition de 1s e  a tabela  menu tem um 1s para aparecer com uma animação*/
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+}
+/*Efeito Quando passa o mouse Menu no li*/
+nav#menu li:hover { /*Houver é o efeito que sera aplicado quando o mouse passa por cima no menu*/
+    background-color: rgb(128, 128, 128);
+}
+
+nav#menu h1 { 
+    display: none;
+}
+/*Melhorando todos os links*/
+nav#menu a { /*a e uma ancorar mudando a cor do link na tabela menu*/
+    color: black;
+    text-decoration: none;
+}
+/*Mudando a cor do link usando o hover*/
+nav#menu a:hover {
+    color: whitesmoke;
+}
+/*Formatando meus section,aside,footer*/
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060 ;
+    padding-right: 15px;
+}
+
+aside,#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top:10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+aside#lateral h1 {
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 21pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding:10px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+/*Tabela Especificação formatando!*/
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px; /*Da o espaço  entre a celulas;*/
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelaspec td { /*Formatando meu Td da tabela Especificação*/
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align:  center;
+    padding: 10px;
+    vertical-align: middle;
+}
+/*Formatando tabela Especificação td.ce*/
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+/*Formatando tabela Especificação td.cd*/
+table#tabelaspec td.cd {
+    background-color: #cecece;
+    text-align: left;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+/*Formatando o span da Especificação*/
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+/*Formatando o artigo article */
+article#Noticia-Principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color:#dddddd;
+    padding: 5px 0x 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#Cabecalho-artigo h1 {
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 22px;
+    color: #606060;
+    margin-bottom: 0px;
+    
+}
+header#Cabecalho-artigo h2 {
+    font-size: 13px;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+header#Cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+.direita {
+    text-align: right;
+}
+video#Filme-imagem{
+    display: block;
+    position: relative;
+    left: -6px;
+    top: 1px;
+    width: 363px;
+}
